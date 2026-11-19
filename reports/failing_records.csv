@@ -1,0 +1,45 @@
+issues,record_id,country_code,country_name,quarter,gdp_usd_bn,population_m,gdp_per_capita_usd,inflation_rate_pct,unemployment_rate_pct,last_updated,source
+unemployment_rate_pct is not null,12,GHA,Ghana,2022-Q4,20.28,34.61,585.96,6.87,,2023-02-18,National Statistics Office
+unemployment_rate_pct is not null,14,GHA,Ghana,2023-Q2,20.21,34.81,580.58,4.72,,2023-08-14,Central Bank
+country_code in reference list; country_name matches country_code,15,XXX,Ghana,2023-Q3,20.54,34.91,588.37,11.98,4.4,2023-11-18,National Statistics Office
+last_updated not after 2026-11-01,18,GHA,Ghana,2024-Q2,21.1,35.21,599.26,5.23,3.17,2031-01-01,National Statistics Office
+gdp_usd_bn is not null,34,NGA,Nigeria,2022-Q2,,229.02,544.01,5.11,2.59,2022-08-11,National Statistics Office
+quarter format is YYYY-Q1..Q4,37,NGA,Nigeria,2023Q5,125.0,231.03,541.06,4.34,5.16,2023-05-08,National Statistics Office
+gdp_usd_bn is not null,44,NGA,Nigeria,2024-Q4,,235.71,553.05,1.1,3.17,2025-02-03,Central Bank
+unemployment_rate_pct between 0 and 100,68,KEN,Kenya,2024-Q4,30.68,58.13,527.78,7.41,120.0,2025-02-21,Central Bank
+gdp_usd_bn >= 0; gdp_per_capita_usd = GDP ÷ population (±1%),69,KEN,Kenya,2025-Q1,-30.6,58.3,524.87,7.27,6.71,2025-05-06,National Statistics Office
+gdp_per_capita_usd = GDP ÷ population (±1%),76,ZAF,South Africa,2020-Q4,96.99,60.54,16020.8,4.51,1.73,2021-02-03,National Statistics Office
+unemployment_rate_pct is not null,81,ZAF,South Africa,2022-Q1,99.62,61.44,1621.42,3.21,,2022-05-01,National Statistics Office
+unemployment_rate_pct is not null; last_updated is a valid date,82,ZAF,South Africa,2022-Q2,100.87,61.62,1636.97,5.24,,not available,National Statistics Office
+country_code in reference list; country_name matches country_code,96,XXX,South Africa,2025-Q4,107.92,64.14,1682.57,-2.01,11.81,2026-01-30,Central Bank
+gdp_per_capita_usd = GDP ÷ population (±1%),99,USA,United States,2020-Q3,6849.65,337.01,203247.7,0.35,0.07,2020-10-31,Central Bank
+quarter format is YYYY-Q1..Q4,103,USA,United States,2023Q5,7048.39,341.03,20667.95,4.43,8.56,2021-11-26,National Statistics Office
+gdp_usd_bn >= 0; gdp_per_capita_usd = GDP ÷ population (±1%),105,USA,United States,2022-Q1,-6973.95,343.04,20329.84,-3.33,4.97,2022-05-20,Central Bank
+country_code in reference list; country_name matches country_code,110,XXX,United States,2023-Q2,7206.26,348.06,20704.07,7.9,6.61,2023-08-12,Central Bank
+last_updated is a valid date,126,GBR,United Kingdom,2021-Q2,847.39,69.02,12277.46,7.82,6.07,not available,National Statistics Office
+gdp_usd_bn >= 0; gdp_per_capita_usd = GDP ÷ population (±1%),127,GBR,United Kingdom,2021-Q3,-839.59,69.22,12129.3,4.66,1.03,2021-11-20,Central Bank
+unemployment_rate_pct between 0 and 100,132,GBR,United Kingdom,2022-Q4,884.96,70.24,12599.09,3.25,120.0,2023-02-26,Central Bank
+last_updated is a valid date,134,GBR,United Kingdom,2023-Q2,900.93,70.65,12752.02,4.23,11.37,not available,Central Bank
+last_updated not after 2026-11-01,144,GBR,United Kingdom,2025-Q4,939.27,72.69,12921.58,2.94,9.7,2031-01-01,National Statistics Office
+source is not null; quarter format is YYYY-Q1..Q4,152,DEU,Germany,2023Q5,1141.54,85.76,13310.87,-0.61,3.16,2022-02-14,
+gdp_usd_bn is not null,154,DEU,Germany,2022-Q2,,86.27,135049.3,3.69,10.82,2022-08-05,Central Bank
+last_updated not after 2026-11-01,157,DEU,Germany,2023-Q1,1163.54,87.02,13370.95,7.79,4.58,2031-01-01,Central Bank
+gdp_per_capita_usd = GDP ÷ population (±1%),175,IND,India,2021-Q3,969.88,1455.74,6662.5,3.91,5.69,2021-11-13,National Statistics Office
+gdp_usd_bn is not null,178,IND,India,2022-Q2,,1468.61,658.65,2.87,0.04,2022-08-16,National Statistics Office
+quarter format is YYYY-Q1..Q4,189,IND,India,2023Q5,1021.02,1515.8,673.58,-2.99,10.01,2025-05-02,Central Bank
+source is not null,190,IND,India,2025-Q2,1032.11,1520.09,678.98,-1.44,7.3,2025-08-07,
+gdp_usd_bn is not null,195,BRA,Brazil,2020-Q3,,217.3,2580.17,8.55,8.02,2020-11-21,National Statistics Office
+gdp_usd_bn is not null,196,BRA,Brazil,2020-Q4,,217.94,2571.17,3.78,3.16,2021-02-24,Central Bank
+gdp_usd_bn is not null,198,BRA,Brazil,2021-Q2,,219.24,2584.25,6.81,3.72,2021-07-31,National Statistics Office
+source is not null,199,BRA,Brazil,2021-Q3,570.13,219.89,2592.8,0.79,6.85,2021-11-26,
+gdp_per_capita_usd = GDP ÷ population (±1%),218,CAN,Canada,2020-Q2,529.61,40.12,132006.5,6.06,8.01,2020-08-08,Central Bank
+gdp_usd_bn >= 0; gdp_per_capita_usd = GDP ÷ population (±1%),219,CAN,Canada,2020-Q3,-521.13,40.24,12950.55,8.67,4.05,2020-11-04,National Statistics Office
+unemployment_rate_pct is not null,222,CAN,Canada,2021-Q2,542.21,40.6,13354.93,1.97,,2021-08-06,Central Bank
+last_updated is a valid date,226,CAN,Canada,2022-Q2,559.89,41.08,13629.26,4.27,0.51,not available,Central Bank
+gdp_usd_bn is not null,234,CAN,Canada,2024-Q2,,42.04,13932.21,-1.52,6.05,2024-07-31,Central Bank
+unemployment_rate_pct between 0 and 100,238,CAN,Canada,2025-Q2,592.78,42.52,13941.2,8.36,120.0,2025-08-03,National Statistics Office
+"(country_code, quarter) is unique",241,NGA,Nigeria,2020-Q1,115.95,223.0,519.96,2.01,8.2,2020-05-14,Central Bank
+"(country_code, quarter) is unique",242,GHA,Ghana,2021-Q3,19.6,34.1,574.78,4.59,8.6,2021-11-13,National Statistics Office
+"(country_code, quarter) is unique",243,ZAF,South Africa,2025-Q2,107.16,63.78,1680.15,9.38,7.03,2025-08-18,Central Bank
+"(country_code, quarter) is unique; country_code in reference list; country_name matches country_code",244,XXX,United States,2023-Q2,7206.26,348.06,20704.07,7.9,6.61,2023-08-12,Central Bank
+"(country_code, quarter) is unique; gdp_usd_bn >= 0; gdp_per_capita_usd = GDP ÷ population (±1%)",245,USA,United States,2022-Q1,-6973.95,343.04,20329.84,-3.33,4.97,2022-05-20,Central Bank

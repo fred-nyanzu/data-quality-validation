@@ -1,0 +1,17 @@
+dimension,rule,columns,rows_checked,rows_failed,pass_rate,status
+Completeness,country_code is not null,country_code,245,0,1.0,PASS
+Completeness,gdp_usd_bn is not null,gdp_usd_bn,245,8,0.9673,FAIL
+Completeness,population_m is not null,population_m,245,0,1.0,PASS
+Completeness,unemployment_rate_pct is not null,unemployment_rate_pct,245,5,0.9796,FAIL
+Completeness,source is not null,source,245,3,0.9878,FAIL
+Uniqueness,"(country_code, quarter) is unique","country_code, quarter",245,5,0.9796,FAIL
+Validity,country_code in reference list,country_code,245,4,0.9837,FAIL
+Validity,quarter format is YYYY-Q1..Q4,quarter,245,4,0.9837,FAIL
+Validity,gdp_usd_bn >= 0,gdp_usd_bn,245,5,0.9796,FAIL
+Validity,population_m >= 0,population_m,245,0,1.0,PASS
+Validity,unemployment_rate_pct between 0 and 100,unemployment_rate_pct,245,3,0.9878,FAIL
+Validity,inflation_rate_pct between -50 and 1000,inflation_rate_pct,245,0,1.0,PASS
+Validity,last_updated is a valid date,last_updated,245,4,0.9837,FAIL
+Consistency,gdp_per_capita_usd = GDP ÷ population (±1%),"gdp_usd_bn, population_m, gdp_per_capita_usd",245,9,0.9633,FAIL
+Consistency,country_name matches country_code,"country_code, country_name",245,4,0.9837,FAIL
+Timeliness,last_updated not after 2026-11-01,last_updated,245,3,0.9878,FAIL
