@@ -125,6 +125,26 @@ print(checks.failing_rows(df, results))
 - Record the source system for each failure to support **data lineage** and root-cause analysis.
 - Add per-source freshness rules with agreed service levels.
 
+
+## Data dictionary
+
+| Column | Description | Example |
+|---|---|---|
+| `record_id` | Row number in the file | 17 |
+| `country_code` | ISO 3-letter country code | GHA |
+| `country_name` | Country name | Ghana |
+| `quarter` | Reporting quarter (YYYY-Qn) | 2023-Q2 |
+| `gdp_usd_bn` | Quarterly GDP, US$ billions | 19.8 |
+| `population_m` | Population, millions | 34.1 |
+| `gdp_per_capita_usd` | GDP ÷ population, US$ | 580.6 |
+| `inflation_rate_pct` | Inflation rate, % | 7.4 |
+| `unemployment_rate_pct` | Unemployment rate, % | 6.9 |
+| `last_updated` | Date the record was last updated | 2023-08-12 |
+| `source` | Organisation that supplied the figures | Central Bank |
+
+
+
+
 ## About the data
 
 The dataset is **synthetic**. It was generated for demonstration and contains issues injected on purpose. The values are not real economic statistics.
