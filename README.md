@@ -1,4 +1,5 @@
 # Data-Quality Validation
+## Simple quide for practice ##
 
 A lightweight, repeatable way to check a dataset against documented rules **before** it is used for analysis or reporting, built with Python, pandas and Jupyter.
 
